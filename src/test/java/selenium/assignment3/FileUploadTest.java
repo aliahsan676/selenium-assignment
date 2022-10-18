@@ -15,7 +15,7 @@ public class FileUploadTest {
         driver.get("https://the-internet.herokuapp.com/upload");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-        String imageRT = System.getProperty("user.dir") + "src/test/resources/football.jpeg";
+        String imageRT = System.getProperty("user.dir") + "\\src\\test\\resources\\football.jpeg";
         System.out.println(imageRT);
 
         driver.findElement(By.id("file-upload")).sendKeys(imageRT);
